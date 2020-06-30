@@ -15,14 +15,14 @@ html, body{
 }
 
 .center{
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 
 header{
-    min-width: 1280px;
     width: 100%;
     height: 60px;
+    padding: 0 2%;
     background-color: #212343;
 }
 
@@ -33,6 +33,7 @@ header img{
 .container-banner{
     width: 100%;
     height: 557px;
+    padding:  0 2%;
     background-image: url('../images/header_bg.png');
     background-size: cover;
     background-position: center;
@@ -40,6 +41,7 @@ header img{
 
 .container-banner > .center{
     height: 100%;
+    max-width: 1280px;
 }
 
 .form{
@@ -80,6 +82,7 @@ header img{
 .form p{
     margin: 20px 0;
     color: #888888;
+    width: 100%;
 }
 
 .form input[type=submit]{
@@ -117,8 +120,7 @@ header img{
 }
 
 .container-two{
-    min-width: 1280px;
-    padding: 40px 0;
+    padding: 40px 2%;
     background-color: #dddddd;
     text-align: center;
 }
@@ -126,7 +128,8 @@ header img{
 .container-two p{
     font-weight: normal;
     text-align: justify;
-    width: 698px;
+    max-width: 768px;
+    width: 100%;
     display: inline-block;
     margin: 15px 0;
 }
@@ -180,4 +183,50 @@ footer{
     border-top:  4px solid #888888;
     clear: both;
     text-align: center;
+}
+
+.clear{
+    clear: both;
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .container-banner{
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .form{
+        max-width: 400px;
+        padding: 10px;
+        width: 90%;
+        height: 100%;
+        float: none;
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        margin-top: 20px;
+    }
+
+    .container-list{
+        float: none;
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .container-single{
+        display: inline-block;
+        width: auto;
+        padding: 30px;
+    }
 }
